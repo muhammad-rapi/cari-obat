@@ -19,13 +19,17 @@ const search = async () => {
             "error",
             `Mohon Maaf, Kami belum ada rekomendasi obat untuk sakit ${sickName}🙏🏻`
         );
-    } else if (sickName === "batuk") {
-        showAlert("info", `ES TEROSS, Semoga ${sickName}nya cepat sembuhh yaa!!❤️‍🩹`);
-    } else {
+    } else if (
+        sickName === "batuk" ||
+        sickName === "flu" ||
+        sickName === "pilek"
+    ) {
         showAlert(
             "info",
-            `Semoga ${sickName}nya cepat sembuhh yaa!!❤️‍🩹, Jangan lupa diminum obatnyaaa😘`
+            `ES TEROSS, Semoga ${sickName}nya cepat sembuhh yaa!!❤️‍🩹, jangan lupa diminum obatnyaa(khusus nasywa)`
         );
+    } else {
+        showAlert("info", `Semoga ${sickName}nya cepat sembuhh ya!!❤️‍🩹`);
     }
 
     loader.style.display = "none";
