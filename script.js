@@ -68,7 +68,7 @@ const showCards = (obat) => {
                     <div class="card-body">
                         <h5 class="card-title">${obat.alt}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">${obat.harga}</h6>
-                        <a href="${obat.sumber}" class="btn btn-primary">Klik Sumber</a>
+                        <a href="${obat.sumber}" class="btn btn-primary">Klik Detail</a>
                     </div>
                 </div>
             </div>`;
