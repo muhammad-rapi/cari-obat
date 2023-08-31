@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yuki Health</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-5 mb-3">
+                <div class="col text-center">
+                    <h2>Cari tahu rekomendasi obat yang cocok untuk kamu</h2>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input
+                    type="text"
+                    name="text"
+                    class="input-text input"
+                    placeholder="search..."
+                />
+                <span class="icon-search icon">
+                    <svg
+                        width="19px"
+                        height="19px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                opacity="1"
+                                d="M14 5H20"
+                                stroke="#000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                opacity="1"
+                                d="M14 8H17"
+                                stroke="#000"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2"
+                                stroke="#000"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                opacity="1"
+                                d="M22 22L20 20"
+                                stroke="#000"
+                                stroke-width="3.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+
+            <div class="loader" style="display: none">
+                <div class="justify-content-center jimu-primary-loading"></div>
+            </div>
+            <div class="row obat-container"></div>
+
+            <p class="no-results" style="display: none">
+                Tidak ada hasil yang ditemukan.
+            </p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
